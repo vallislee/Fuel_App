@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".auth_main">
+
+    <TextView
+        android:id="@+id/account_email_text"
+        android:layout_width="209dp"
+        android:layout_height="31dp"
+        android:fontFamily="casual"
+        android:textAllCaps="false"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        tools:text="example@example.com" />
+
+    <Button
+        android:id="@+id/summary_btn"
+        android:layout_width="358dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:fontFamily="casual"
+        android:text="Summary"
+        app:layout_constraintBottom_toTopOf="@+id/fillup_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_email_text"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <Button
+        android:id="@+id/fillup_btn"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:fontFamily="casual"
+        android:text="Fill Up"
+        app:layout_constraintBottom_toTopOf="@+id/driving_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summary_btn" />
+
+    <Button
+        android:id="@+id/driving_btn"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:fontFamily="casual"
+        android:text="Driving"
+        app:layout_constraintBottom_toTopOf="@+id/accountSET_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fillup_btn" />
+
+    <Button
+        android:id="@+id/accountSET_btn"
+        android:layout_width="376dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/common_google_signin_btn_text_light_default"
+        android:fontFamily="casual"
+        android:text="Account Setting"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintBottom_toTopOf="@+id/auth_signout_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driving_btn" />
+
+    <Button
+        android:id="@+id/auth_signout_btn"
+        android:layout_width="407dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/common_google_signin_btn_text_light_disabled"
+        android:fontFamily="casual"
+        android:text="Sign Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895" />
+
+</android.support.constraint.ConstraintLayout>
